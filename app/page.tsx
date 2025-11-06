@@ -69,13 +69,7 @@ export default function Home() {
             {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
           </motion.button>
 
-          <audio
-            ref={audioRef}
-            src="/public/audio/background.mp3"
-            loop
-            crossOrigin="anonymous"
-            preload="auto"
-          />
+          <audio ref={audioRef} src="/audio/background.mp3" loop crossOrigin="anonymous" preload="auto" />
 
           <SteamEffect />
           <Hero />
